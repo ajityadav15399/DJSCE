@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/Gps"
+        android:checkable="false"
+        android:title="GPS">
+    </item>
+    <item
+        android:id="@+id/Sensitivity"
+        android:checkable="false"
+        android:title="sensitivity"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/power"
+        android:title="@string/action_power">
+        <menu>
+            <group
+                android:id="@+id/action_power"
+                android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/action_power_1"
+                    android:title="Active" />
+                <item
+                    android:id="@+id/action_power_2"
+                    android:title="InActive" />
+
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/shake"
+        android:title="@string/action_shake">
+        <menu>
+            <group
+                android:id="@+id/action_shake"
+                android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/action_shake_1"
+                    android:title="Active" />
+                <item
+                    android:id="@+id/action_shake_2"
+                    android:title="InActive" />
+
+            </group>
+        </menu>
+    </item>
+</menu>
